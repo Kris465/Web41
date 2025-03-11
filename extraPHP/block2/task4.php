@@ -8,7 +8,7 @@ $result1 = !$X && $Y;
 $result2 = $X || !$Y;       
 $result3 = $X || ($Y && $Z);
 
-echo "Не X и Y: " . ($result1 ? "Истина" : "Ложь") . PHP_EOL;
-echo "X или не Y: " . ($result2 ? "Истина" : "Ложь") . PHP_EOL;
-echo "X или (Y и Z): " . ($result3 ? "Истина" : "Ложь") . PHP_EOL;
+echo "Не X и Y: " . ($result1 ? "Истина" : "Ложь");
+echo "X или не Y: " . ($result2 ? "Истина" : "Ложь");
+echo "X или (Y и Z): " . ($result3 ? "Истина" : "Ложь");
 ?>
