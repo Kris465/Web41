@@ -1,13 +1,18 @@
-const prompt = require('prompt-sync')();
-
-let A = true;  
-let B = false; 
-let C = false; 
-
-let expression1 = A || B; 
-let expression2 = A && B; 
-let expression3 = B || C;
-
-console.log(`A или B: ${expression1}`); 
-console.log(`A и B: ${expression2}`); 
-console.log(`B или C: ${expression3}`); 
+function calculateExpressions() {
+    const A = true;
+    const B = false;
+    const C = false;
+  
+    console.log(`A = ${A}, B = ${B}, C = ${C}`);
+  
+    const a = A || B;
+    console.log(`  a) A || B: ${a}`);
+  
+    const b = A && B;
+    console.log(`  b) A && B: ${b}`);
+  
+    const c = B || C;
+    console.log(`  c) B || C: ${c}`);
+  }
+  
+  calculateExpressions();

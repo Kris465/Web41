@@ -1,11 +1,18 @@
-let A = true;   
-let B = false; 
-let C = false;  
-
-let expression1 = !A && B;     
-let expression2 = A || !B;     
-let expression3 = A && B || C;  
-
-console.log(`не A и B: ${expression1}`);   
-console.log(`A или не B: ${expression2}`);  
-console.log(`A и B или C: ${expression3}`); 
+function calculateExpressions() {
+    const A = true;
+    const B = false;
+    const C = false;
+  
+    console.log(`A = ${A}, B = ${B}, C = ${C}`);
+  
+    const a = !A && B;
+    console.log(`  a) !A && B: ${a}`);
+  
+    const b = A || !B;
+    console.log(`  b) A || !B: ${b}`);
+  
+    const c = (A && B) || C;
+    console.log(`  c) (A && B) || C: ${c}`);
+  }
+  
+  calculateExpressions();
