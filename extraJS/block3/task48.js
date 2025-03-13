@@ -5,6 +5,7 @@ function calculateLogicalExpressions() {
       for (const Y of possibleValues) {
         console.log(`X = ${X}, Y = ${Y}`);
   
+
         const a = !(X && !Y) || X;
         console.log(`  a) !(X && !Y) || X: ${a}`);
 
@@ -19,3 +20,4 @@ function calculateLogicalExpressions() {
     }
   }
   
+  calculateLogicalExpressions();
