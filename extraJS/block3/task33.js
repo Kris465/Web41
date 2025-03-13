@@ -1,5 +1,3 @@
-
-
 function checkPointInShadedArea(x, y) {
     const inRectangle = (x >= 0 && x <= 5 && y >= 0 && y <= 5);
     const inCircle = ((x - 3) ** 2 + (y - 3) ** 2 <= 2 ** 2);
