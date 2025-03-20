@@ -14,29 +14,29 @@
         .square {
             width: 100px;
             height: 100px;
-            background-color: red; /* Цвет квадрата */
+            background-color: red; 
             position: absolute;
-            top: 50px; /* Позиция по вертикали */
-            left: 50px; /* Позиция по горизонтали */
+            top: 50px; 
+            left: 50px; 
         }
         .circle {
             width: 100px;
             height: 100px;
-            background-color: blue; /* Цвет круга */
+            background-color: blue; 
             border-radius: 50%;
             position: absolute;
-            top: 200px; /* Позиция по вертикали */
-            left: 200px; /* Позиция по горизонтали */
+            top: 200px; 
+            left: 200px; 
         }
         .triangle {
             width: 0;
             height: 0;
             border-left: 50px solid transparent;
             border-right: 50px solid transparent;
-            border-bottom: 100px solid green; /* Цвет треугольника */
+            border-bottom: 100px solid green; 
             position: absolute;
-            top: 400px; /* Позиция по вертикали */
-            left: 100px; /* Позиция по горизонтали */
+            top: 400px; 
+            left: 100px; 
         }
     </style>
 </head>
