@@ -32,11 +32,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $score = 0;
     foreach ($correctAnswers as $index => $answer) {
         if (isset($_POST['question' . $index]) && strtolower(trim($_POST['question' . $index])) === strtolower($answer)) {
-            $score += 5; // 5 баллов за правильный ответ
+            $score += 5; 
         }
     }
-    $_SESSION['score3'] = $score3; // Сохраняем количество правильных ответов
-    header('Location: results.php'); // Переход на страницу результатов
+    $_SESSION['score3'] = $score3; 
+    header('Location: results.php'); 
     exit();
 }
 ?>
