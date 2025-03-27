@@ -1,7 +1,7 @@
 const prompt = require('prompt-sync')();
 
 function isLuckyNumber(n) {
-    // Преобразуем число в строку
+
     const numberStr = n.toString();
 
    
@@ -13,7 +13,7 @@ function isLuckyNumber(n) {
     const firstHalfSum = parseInt(numberStr[0]) + parseInt(numberStr[1]) + parseInt(numberStr[2]);
     const secondHalfSum = parseInt(numberStr[3]) + parseInt(numberStr[4]) + parseInt(numberStr[5]);
 
-    // Сравниваем суммы
+
     return firstHalfSum === secondHalfSum;
 }
 
