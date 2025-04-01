@@ -1,5 +1,4 @@
-const prompt = require('prompt-sync')();
-
+//artemka malenkaya popka
 function productOfTwoSmallest(a, b, c) {
     let smallest, secondSmallest;
 
