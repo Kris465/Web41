@@ -21,18 +21,17 @@ required>
 type="submit">Отправить</button>
     </form>\
 
-    <?php
-    if |($_SERVER["REQUEST_METHOD"] ==
-    "POST")  {
-             number1 = $_POST['NUMBER1'];
-             number2 = $_POST['NUMBER2'];
-             number3 = $_POST['NUMBER3'];
-             echo
-    htmlspecialchars($number1) . " " .
-    htmlspecialchars($number2) . " " .
-    htmlspecialchars($number3);
+<?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST")  {
+                number1 = $_POST['NUMBER1'];
+                number2 = $_POST['NUMBER2'];
+                number3 = $_POST['NUMBER3'];
+                echo
+                htmlspecialchars($number1) . " " .
+                htmlspecialchars($number2) . " " .
+                htmlspecialchars($number3);
         }
-        ?>
+?>
     
 </body>
 </html>
