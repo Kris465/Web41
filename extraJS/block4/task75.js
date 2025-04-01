@@ -1,4 +1,5 @@
-const prompt = require('prompt-sync')();
+
+console.log(`Результат: ${firstNumber}`);
 
 function absoluteValue(num) {
     return (num * (num >= 0)) + (-num * (num < 0));
