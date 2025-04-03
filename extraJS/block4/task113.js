@@ -1,4 +1,4 @@
-const prompt = require('prompt-sync')();
+
 
 function getDaysInMonth(month, year) {
 
