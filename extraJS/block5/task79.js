@@ -23,6 +23,8 @@ function approximateArea(n) {
     }
 
     return area;
+
+    
 }
 
 const userInput = prompt("Введите количество разбиений (n):");
