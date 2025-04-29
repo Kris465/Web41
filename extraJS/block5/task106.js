@@ -1,4 +1,4 @@
-const prompt = require('prompt-sync')();
+
 
 function reverseBetween(word, k, s) {
     if (word.length !== 15) {
