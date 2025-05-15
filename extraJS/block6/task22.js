@@ -1,6 +1,3 @@
-const numStr = prompt("Введите натуральное число:");
-const digits = numStr.split('');
-
 let count3 = 0;
 let lastDigit = digits[digits.length - 1];
 let countLastDigit = 0;
