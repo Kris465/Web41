@@ -1,30 +1,20 @@
 const prompt = require('prompt-sync')(); 
 
-const sequence = [];
-for (let i = 0; i < 15; i++) {
-    const input = prompt(`Введите вещественное число ${i + 1} из 15:`);
-    const num = parseFloat(input);
-    if (isNaN(num)) {
-        alert("Некорректный ввод, попробуйте снова.");
-        i--;
-    } else {
-        sequence.push(num);
+const sequence = [ 1.2, 3.4, 3.4, 5.6, 7.8, 9.0, 10.1, 12.3, 14.5, 16.7, 18.9, 20.0, 22.2, 24.4, 26.6];
+
+function checkAscendingOrder(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            return i + 1; 
+        }
     }
+    return -1;
 }
 
-let isOrdered = true;
-let violationIndex = -1;
+const violationIndex = checkAscendingOrder(sequence);
 
-for (let i = 0; i < sequence.length - 1; i++) {
-    if (sequence[i] > sequence[i + 1]) {
-        isOrdered = false;
-        violationIndex = i + 1;
-        break;
-    }
-}
-
-if (isOrdered) {
+if (violationIndex === -1) {
     console.log("Последовательность упорядочена по возрастанию.");
 } else {
-    console.log(`Последовательность не упорядочена. Нарушение в позиции ${violationIndex}.`);
+    console.log(`Последовательность не упорядочена по возрастанию. Нарушение в позиции ${violationIndex}.`);
 }
