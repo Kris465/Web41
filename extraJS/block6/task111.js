@@ -1,10 +1,9 @@
 const prompt = require('prompt-sync')(); 
 const targetFactorial = parseInt(prompt("Введите известный факториал:"));
 
-// Функция для поиска n по факториалу
 function findNumberByFactorial(fact) {
     if (fact < 1) {
-        return fact === 1 ? 0 : -1; // 0! = 1, 1! = 1
+        return fact === 1 ? 0 : -1; 
     }
     let n = 1;
     let currentFactorial = 1;
@@ -15,7 +14,6 @@ function findNumberByFactorial(fact) {
             return n;
         }
     }
-    // Если не нашли точное совпадение
     return -1;
 }
 
