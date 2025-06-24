@@ -1,4 +1,5 @@
 const prompt = require('prompt-sync')();
+let b = prompt('введите b:');  
 let n = prompt('введите n:');     
 let x = prompt('введите x:');       
 let y = prompt('введите y:');       
