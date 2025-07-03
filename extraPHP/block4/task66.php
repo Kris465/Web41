@@ -29,7 +29,7 @@ foreach ($orientations as $size) {
     }
 
     if ($h <= $a && $w <= $b) {
-        $count_along_height = floor($a / h) * floor($b / w);
+        $count_along_height = floor($a / $h) * floor($b / $w);
         if ($count_along_height > $max_count) {
             $max_count = $count_along_height;
         }
